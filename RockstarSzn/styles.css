@@ -1,0 +1,154 @@
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.left {
+    margin-bottom: 20px;
+}
+
+.album-cover {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    filter: grayscale(100%);
+}
+
+.right {
+    text-align: center;
+}
+
+.album-info {
+    text-align: center;
+}
+
+h1.album-title {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.artist-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #fff;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn.spotify:hover {
+    background-color: #1DB954;
+    color: #000;
+}
+
+.btn.apple:hover {
+    background-color: #A3AAAE;
+    color: #000;
+}
+
+.agreement {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.agreement p {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.logos {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logos .logo {
+    width: 50px;  /* Adjust the size of the logos */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logos .logo:hover {
+    transform: scale(1.1);  /* Slightly enlarge the logo on hover */
+}
+
+.privacy {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #000;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .album-cover {
+        max-width: 300px;
+    }
+}
